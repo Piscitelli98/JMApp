@@ -1,0 +1,5 @@
+Zip Ufficiali del progetto
+
+git clone https://github.com/nomeUtente/nomeRepo.git // per scaricare
+git commit -m "Messaggio per la commit"
+git push origin master
