@@ -1,0 +1,14 @@
+Server INFO-WEB
+
+Dashboard MyPhPAdmin:
+
+http://info-web
+http://172.16.0.80   (LAN)
+http://172.22.0.80   (WiFi)
+
+
+Per trasferimento file, da Esplora file:
+\\172.xx.0.80
+User: jeanmonnet\cognome_nome
+
+Password: ....
