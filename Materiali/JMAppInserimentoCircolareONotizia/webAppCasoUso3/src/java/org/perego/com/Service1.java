@@ -5,6 +5,9 @@
  */
 package org.perego.com;
 
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.util.Vector;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
@@ -27,7 +30,9 @@ public class Service1 {
     boolean loggato=true;
     String nomeUtente="admin";//settato da login
     Vector<circolare> circolari;
-    
+     private final int SERVER_PORT = 3333;
+     
+     
     //database
    String connectionString="jdbc:mysql://localhost:8080/JMApp?user=root&password=secret";
 
@@ -63,6 +68,10 @@ public class Service1 {
             }
        
     }
+    
+     
+    
+    
     public Service1() {
         circolari = new Vector<circolare>();        
     }
@@ -130,6 +139,22 @@ public class Service1 {
             }
         }
         return temp;
+    }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "set_salvaCircolare")
+    public Vector<String> set_salvaCircolare() {
+        
+        Server s = new Server();
+      try {
+          s.listen();
+      } catch (IOException e) {
+          e.printStackTrace();
+      }
+       
+        return null;
     }
 
 
