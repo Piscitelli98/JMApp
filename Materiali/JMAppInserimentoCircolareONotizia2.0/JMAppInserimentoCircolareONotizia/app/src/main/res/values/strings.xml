@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JMAppInserimentoCircolareONotizia</string>
+    <string name="inserimento">Inserimento circolari</string>
+    <string name="insCircolari">Seleziona il tipo di circolare</string>
+    <string name="insDestinatari">Seleziona il destinatario</string>
+    <string name="pubblico">Pubblico</string>
+    <string name="privato">Privato</string>
+    <string name="insTesto">Inserisci il testo della circolare o notizia</string>
+</resources>
